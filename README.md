@@ -1,6 +1,26 @@
-# NervesHelloMcp3002
+# NervesHelloPotentiometer
 
-**TODO: Add description**
+A demo project for [[Elixir/Nerves] Potentiometer with SPI-based Analog to Digital Converter](https://dev.to/mnishiguchi/elixir-nerves-potentiometer-with-spi-based-analog-to-digital-converter-25h1).
+
+## Usage
+
+SSH to your target device and run the following commands.
+
+### The logging demo
+
+```elixir
+NervesHelloPotentiometer.start_logging_demo()
+```
+
+![spi-potentiometer-readings](https://user-images.githubusercontent.com/7563926/104030802-ef34e780-5199-11eb-99d0-4f9afcb8b0d7.gif)
+
+### The servo demo
+
+```elixir
+NervesHelloPotentiometer.start_servo_demo()
+```
+
+![potentiometer-servo](https://user-images.githubusercontent.com/7563926/104080569-d7d81780-51f6-11eb-9c93-43361156c167.gif)
 
 ## Targets
 

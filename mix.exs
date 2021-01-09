@@ -1,7 +1,7 @@
-defmodule NervesHelloMcp3002.MixProject do
+defmodule NervesHelloPotentiometer.MixProject do
   use Mix.Project
 
-  @app :nerves_hello_mcp3002
+  @app :nerves_hello_potentiometer
   @version "0.1.0"
   @all_targets [:rpi, :rpi0, :rpi2, :rpi3, :rpi3a, :rpi4, :bbb, :osd32mp1, :x86_64]
 
@@ -22,7 +22,7 @@ defmodule NervesHelloMcp3002.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      mod: {NervesHelloMcp3002.Application, []},
+      mod: {NervesHelloPotentiometer.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end
@@ -36,6 +36,7 @@ defmodule NervesHelloMcp3002.MixProject do
       {:ring_logger, "~> 0.8.1"},
       {:toolshed, "~> 0.2.13"},
       {:circuits_spi, "~> 0.1"},
+      {:servo_kit, "~> 0.0.9"},
 
       # Dependencies for all targets except :host
       {:nerves_runtime, "~> 0.11.3", targets: @all_targets},

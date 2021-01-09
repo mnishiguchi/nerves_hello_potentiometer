@@ -1,8 +1,8 @@
-defmodule NervesHelloMcp3002Test do
+defmodule NervesHelloPotentiometerTest do
   use ExUnit.Case
-  doctest NervesHelloMcp3002
+  doctest NervesHelloPotentiometer
 
   test "greets the world" do
-    assert NervesHelloMcp3002.hello() == :world
+    assert NervesHelloPotentiometer.hello() == :world
   end
 end
